@@ -1,0 +1,16 @@
+# Archivos temporales
+*.tmp
+*.log
+
+# Configuración personal del editor
+.vscode/
+
+# Archivos de sistema
+Thumbs.db
+.DS_Store
+
+# Dependencias de Node.js
+node_modules/
+
+# Variables de entorno
+.env

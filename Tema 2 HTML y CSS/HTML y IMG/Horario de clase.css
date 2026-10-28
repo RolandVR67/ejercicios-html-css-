@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgray;
+}
+
+.web {
+    background-color: lightblue;
+}
+
+.seguridad {
+    background-color: lightgreen;
+}
+
+.ingles {
+    background-color: pink;
+}
+
+.sistemas {
+    background-color: lightsteelblue;
+}
+
+.proyecto {
+    background-color: khaki;
+}
+
+.ipe {
+    background-color: lightyellow;
+}
+
+.optativa {
+    background-color: lavender;
+}
+
+.redes {
+    background-color: peachpuff;
+}
+
+.recreo {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nombre {
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+}

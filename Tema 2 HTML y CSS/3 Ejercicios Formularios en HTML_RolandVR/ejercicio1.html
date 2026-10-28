@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body>
+    <h1>Formulario de inscripción</h1>
+    <p>Rellena los siguientes datos para inscribirte en un curso de formación.</p>
+
+    <form action="registro.html" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del curso</legend>
+
+            <label for="ciclo">Ciclo formativo:</label>
+            <select id="ciclo" name="ciclo" required>
+                <option value="">Elige un ciclo</option>
+                <option>SMR - Sistemas Microinformáticos y Redes</option>
+                <option>ASIR - Administración de Sistemas Informáticos en Red</option>
+                <option>DAM - Desarrollo de Aplicaciones Multiplataforma</option>
+                <option>DAW - Desarrollo de Aplicaciones Web</option>
+                <option>Otro</option>
+            </select>
+
+            <p>Turno preferido:</p>
+            <label class="opcion"><input type="radio" name="turno" value="mañana" required> Mañana</label>
+            <label class="opcion"><input type="radio" name="turno" value="tarde"> Tarde</label>
+
+            <p>Modalidad:</p>
+            <label class="opcion"><input type="radio" name="modalidad" value="presencial" required> Presencial</label>
+            <label class="opcion"><input type="radio" name="modalidad" value="semipresencial"> Semipresencial</label>
+            <label class="opcion"><input type="radio" name="modalidad" value="online"> Online</label>
+        </fieldset>
+
+        <p class="privacidad">
+            <label class="opcion"><input type="checkbox" name="privacidad" required> Acepto la política de privacidad.</label>
+        </p>
+
+        <button type="submit">Inscribirme</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+</html>

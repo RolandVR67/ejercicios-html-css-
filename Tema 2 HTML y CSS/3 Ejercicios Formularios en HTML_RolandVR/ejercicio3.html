@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de satisfacción</title>
+    <link rel="stylesheet" href="ejercicio3.css">
+</head>
+<body>
+    <h1>Encuesta de satisfacción</h1>
+    <p>Queremos conocer tu opinión sobre el servicio.</p>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Datos y valoración</legend>
+            <label for="cliente">Nombre del cliente (opcional):</label>
+            <input type="text" id="cliente" name="cliente">
+
+            <label for="servicio">Servicio utilizado:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">Elige un servicio</option>
+                <option>Reparación</option>
+                <option>Instalación</option>
+                <option>Mantenimiento</option>
+            </select>
+
+            <p>Valoración general del 1 al 5:</p>
+            <label class="opcion"><input type="radio" name="valoracion" value="1" required> 1</label>
+            <label class="opcion"><input type="radio" name="valoracion" value="2"> 2</label>
+            <label class="opcion"><input type="radio" name="valoracion" value="3"> 3</label>
+            <label class="opcion"><input type="radio" name="valoracion" value="4"> 4</label>
+            <label class="opcion"><input type="radio" name="valoracion" value="5"> 5</label>
+
+            <p>¿Qué aspectos te han gustado?</p>
+            <label class="opcion"><input type="checkbox" name="aspectos" value="atencion"> Atención</label>
+            <label class="opcion"><input type="checkbox" name="aspectos" value="rapidez"> Rapidez</label>
+            <label class="opcion"><input type="checkbox" name="aspectos" value="precio"> Precio</label>
+            <label class="opcion"><input type="checkbox" name="aspectos" value="calidad"> Calidad</label>
+
+            <p>¿Recomendarías el servicio?</p>
+            <label class="opcion"><input type="radio" name="recomienda" value="si" required> Sí</label>
+            <label class="opcion"><input type="radio" name="recomienda" value="no"> No</label>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+        </fieldset>
+        <button type="submit">Enviar encuesta</button>
+        <button type="reset">Borrar respuestas</button>
+    </form>
+
+    <h2>Resultados de cinco encuestas</h2>
+    <table>
+        <thead>
+            <tr><th>Cliente</th><th>Servicio</th><th>Valoración</th><th>Recomienda</th><th>Comentarios</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Ana</td><td>Reparación</td><td class="valoracion-5">5</td><td>Sí</td><td>Muy buen servicio</td></tr>
+            <tr><td>Pedro</td><td>Instalación</td><td class="valoracion-4">4</td><td>Sí</td><td>Rápido y eficaz</td></tr>
+            <tr><td>Lucía</td><td>Reparación</td><td class="valoracion-3">3</td><td>No</td><td>Tardaron demasiado</td></tr>
+            <tr><td>Carlos</td><td>Mantenimiento</td><td class="valoracion-5">5</td><td>Sí</td><td>Excelente atención</td></tr>
+            <tr><td>Elena</td><td>Instalación</td><td class="valoracion-2">2</td><td>No</td><td>Precio elevado</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Resumen de puntuaciones</h2>
+    <table class="resumen">
+        <thead><tr><th>Valoración</th><th>N.º de clientes</th></tr></thead>
+        <tbody>
+            <tr><td class="valoracion-1">1</td><td>0</td></tr>
+            <tr><td class="valoracion-2">2</td><td>1</td></tr>
+            <tr><td class="valoracion-3">3</td><td>1</td></tr>
+            <tr><td class="valoracion-4">4</td><td>1</td></tr>
+            <tr><td class="valoracion-5">5</td><td>2</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

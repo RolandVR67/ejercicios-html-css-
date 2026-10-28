@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 25px;
+    color: #222;
+}
+
+h1, h2 {
+    color: #54447a;
+}
+
+form {
+    background-color: white;
+    padding: 15px;
+    max-width: 700px;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #999;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label:not(.opcion) {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], select, textarea {
+    display: block;
+    width: 95%;
+    padding: 7px;
+    margin-top: 4px;
+}
+
+.opcion {
+    margin-right: 12px;
+}
+
+button {
+    padding: 8px 14px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 15px 0 25px;
+}
+
+th, td {
+    border: 1px solid #777;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e5e0f0;
+}
+
+.valoracion-1 {
+    background-color: #f5cccc;
+}
+
+.valoracion-2 {
+    background-color: #f8dfc5;
+}
+
+.valoracion-3 {
+    background-color: #fff0b8;
+}
+
+.valoracion-4 {
+    background-color: #d8e9ff;
+}
+
+.valoracion-5 {
+    background-color: #d8f0d8;
+}
+
+.resumen {
+    width: 300px;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 12px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
